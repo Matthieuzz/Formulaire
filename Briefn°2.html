@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brief n°2 formulaire</title>
+
+</head>
+<body>
+
+    <h1><strong>Voici un formulaire d'inscription</strong></h1><br>
+    <p> 
+
+    </p>
+    <h2>Vous trouverez ci-dessous les éléments nécéssaires à remplir.</h2>
+
+ <!--L'élément <form> représente un formulaire, c'est-à-dire une section d'un document 
+     qui contient des contrôles interactifs permettant à un utilisateur de fournir des informations.-->
+    <form action="formulaire"><fieldset>
+        
+        <!--L'élément <label> représente une légende pour un objet d'une interface utilisateur. 
+            Il peut être associé à un contrôle en utilisant l'attribut for ou en plaçant l'élément du contrôle à l'intérieur de l'élément <label>.
+            Un tel contrôle est appelé contrôle étiqueté par l'élément <label>-->
+        <label id="Prenom"> Prénom </label>
+
+        <!--L'élément <input> est utilisé pour créer un contrôle interactif dans un formulaire web qui permet à l'utilisatrice ou l'utilisateur de saisir des données. 
+            Les saisies possibles et le comportement de l'élément <input> dépendent fortement de la valeur indiquée dans son attribut type et de ses autres attributs. 
+            Il existe différents contrôles pour la saisie, qui dépendent de l'appareil utilisé et de l'agent utilisateur.-->
+        <input type="text" id="Prénom" name="prénom" placeholder="Michael" required minlength="2" maxlength="20" size="15"><br>
+        <br>
+
+        <label id="nom" >Nom </label>
+        <input type="text" id="Nom" name="Nom" placeholder="Jackson" required minlength="2" maxlength="25" size="15"><br>
+        <br>
+
+        <label for="DateDeNaissance">Date de naissance</label>
+        <input type="date" name="Date" id="DateDeNaissance"><br>
+        <br>
+
+        <label id="age" > Age </label>
+        <input type="number" name="Age" id="Age"><br>
+        <br>
+
+        <!--L'élément <div> (ou division) est le conteneur générique du contenu du flux. 
+            Il n'a aucun effet sur le contenu ou la mise en page tant qu'il n'est pas mis en forme d'une manière quelconque à l'aide de CSS.-->
+        <div class="dropdown-menu">
+            <label for="Sexe"> Votre genre:</label>
+            <select name="Sex" id="sexe">
+                <option value="Homme">Homme</option>
+                <option value="Femme">Femme</option>
+            </select>
+        </div>
+        <br>
+        <label id="email">Adresse email:</label>
+        <input type="email" name="Mail" id="Email" placeholder="adresse.mail@gmail.com"><br>
+        <br>
+
+        <label id="AdressePostale">Adresse postale</label>
+        <input type="text" name="Adresse" id="Adressepostale"><br>
+        <br> 
+
+        <label id="CodePostale">Numéro de code postale</label>
+        <input type="text" name="Code Postal" id="postale" placeholder="59118" value="" size="5" maxlength="5" pattern="[0-9]{5}"> <br>
+        <br>
+
+        <label for="Ville">Ville </label>
+        <input type="text" name="Ville" id="ville"><br>
+        <br>
+
+        <label for="Metier">Métier exercé</label>
+        <select name="Métier" id="MétierExercé">
+            <option value="Mécanicien">Mécanicien</option>
+            <option value="Boulanger">Boulanger</option>
+            <option value="Jardinier">Jardinier</option>
+            <option value="Concéssionnaire">Concéssionnaire</option>
+            <option value="Agriculteur">Agriculteur</option>
+        </select><br>
+            <br>
+
+        <label for="Nationalité">Nationalité</label>
+        <select name="nationalité" id="Nationalité">
+            <option value="Français">Français</option>
+            <option value="Anglais">Anglais</option>
+            <option value="Algérien">Algérien</option>
+            <option value="Mélanésiens Papous">Mélanésiens Papous</option>
+        </select><br>
+        <br>
+
+        <label for="PaysDeNaissance">Pays de naissance</label>
+        <select name="Pays" id="PaysDeNaissance">
+            <option value="Albanie">Albanie</option>
+            <option value="Allemagne">Allemagne</option>
+            <option value="Andorre">Andorre</option>
+            <option value="Autriche">Autriche</option>
+            <option value="Belgique">Belgique</option>
+            <option value="Biélorussie">Biélorussie</option>
+            <option value="Bosnie–Herzégovine">Bosnie–Herzégovine</option>
+            <option value="Bulgarie">Bulgarie</option>
+            <option value="Chypre">Chypre</option>
+            <option value="Croatie">Croatie</option>
+            <option value="Danemark">Danemark</option>
+            <option value="Espagne">Espagne</option>
+            <option value="Estonie">Estonie</option>
+            <option value="Finlande">Finlande</option>
+            <option value="France">France</option>
+            <option value="Grèce">Grèce</option>
+            <option value="Hongrie">Hongrie</option>
+            <option value="Irlande">Irlande</option>
+            <option value="Islande">Islande</option>
+            <option value="Italie">Italie</option>
+            <option value="Lettonie">Lettonie</option>
+            <option value="Liechenstein">Liechenstein</option>
+            <option value="Lituanie">Lituanie</option>
+            <option value="Luxembourg">Luxembourg</option>
+            <option value="Macédonie">Macédonie</option>
+            <option value="Malte">Malte</option>
+            <option value="Moldavie">Moldavie</option>
+            <option value="Monaco">Monaco</option>
+            <option value="Monténégro">Monténégro</option>
+            <option value="Norvège">Norvège</option>
+            <option value="Pays-Bas">Pays-Bas</option>
+            <option value="Pologne">Pologne</option>
+            <option value="Portugal">Portugal</option>
+            <option value="République tchèque">République tchèque</option>
+            <option value="Roumanie">Roumanie</option>
+            <option value="Royaume-Uni">Royaume-Uni</option>
+            <option value="Russie">Russie</option>
+            <option value="Serbie">Serbie</option>
+            <option value="Slovaquie">Slovaquie</option>
+            <option value="Slovénie">Slovénie</option>
+            <option value="Suède">Suède</option>
+            <option value="Suisse">Suisse</option>
+            <option value="Ukraine">Ukraine</option>
+        </select>
+        <br>
+        <br>
+
+        <label for="Numerodesecuritesocial">Numéro de sécurité social</label>
+        <input type="number" name="n°SS" id="NuméroDeSécuritéSocial"><br>
+        <br>
+
+        <label for="Numerodepasseport">Numéro de passeport</label>
+        <input type="number" name="N°Passeport" id="NumeroDePasseport"><br>
+        <br>
+
+        <label for="Datededelivrance">Date de délivrance du passeport</label>
+        <input type="date" name="DDD" id="DateDeDelivrance"><br>
+        <br>
+
+        <label for="Datedevalidite ">Date de validité du passeport</label>
+        <input type="date" name="DDV" id="DateDeValidite"><br>
+        <br>
+
+        <label for="validation">Cochez cette case si vous avez relu et êtes sûr des informations enregistrées</label>
+        <input type="checkbox" name="Check" id="Checkbox">
+
+    </fieldset>
+
+    <label for="submit"></label>
+    <input type="submit" name="bouton" id="submit" value="Envoyer">
+
+        </form>
+</body>
+</html>
